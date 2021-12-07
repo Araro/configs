@@ -83,11 +83,11 @@ nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 
 " Use <c-space> to trigger completion.
-if &filetype == "javascript" || &filetype == "python"
-  inoremap <c-space> <C-x><C-u>
-else
+"if &filetype == "javascript" || &filetype == "python"
+""  inoremap <c-space> <C-x><C-u>
+"else
   inoremap <silent><expr> <c-space> coc#refresh()
-end
+"end
 
 set splitright
 function! OpenTerminal()

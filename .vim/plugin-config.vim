@@ -63,10 +63,6 @@ let g:UltiSnipsListSnippets="<C-_>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
-" kite
-let g:kite_supported_languages = ['python', 'javascript']
-let g:kite_tab_complete=1
-
 " vim fugitive
 command! -bang -nargs=? -complete=dir GFiles
   \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)
@@ -76,6 +72,11 @@ command! -bang -nargs=* Ag
 
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+
+" kite
+" let g:kite_supported_languages = ['python', 'javascript']
+" let g:kite_tab_complete=1
 
 " COC
 let g:coc_global_extensions = [
