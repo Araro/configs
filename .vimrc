@@ -17,6 +17,12 @@ set noshowmode
 set scrolloff=5
 set sidescrolloff=5
 
+"" Searching
+set hlsearch                    " highlight matches
+set incsearch                   " incremental searching
+set ignorecase                  " searches are case insensitive...
+set smartcase                   " ... unless they contain at least one capital letter
+
 
 call plug#begin('~/.vim/plugged')
 
@@ -74,6 +80,9 @@ nnoremap <Leader>< 10<C-w><
 nnoremap <C-j> 10<C-e>
 nnoremap <C-k> 10<C-y>
 
+" Turn off search word
+nnoremap <Leader>z :silent! nohls<cr>
+
 " tmux navigator
 let g:tmux_navigator_no_mappings = 1
 
@@ -95,6 +104,19 @@ nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
 "		Ps = 6 -> steady bar (xterm).
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
+
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+
+"  nerdtree
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+let NERDTreeAutoDeleteBuffer=1
+" let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+let NERDTreeShowLineNumbers=1
+let NERDTreeMapOpenInTab='\t'
 
 " lightline
 let  g:lightline = {
