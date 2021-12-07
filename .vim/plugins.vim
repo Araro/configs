@@ -1,3 +1,10 @@
+" Automatic installation of vim-plug (A minimalist Vim plugin manager) 
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
 " syntax
@@ -22,11 +29,6 @@ Plug 'tpope/vim-surround'
 " tmux
 Plug 'benmills/vimux'
 Plug 'christoomey/vim-tmux-navigator'
-
-" autocomplete
-Plug 'sirver/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " test
 Plug 'tyewang/vimux-jest-test'

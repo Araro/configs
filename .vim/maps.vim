@@ -50,11 +50,6 @@ cnoreabbrev blame Gblame
 cnoreabbrev find NERDTreeFind
 cnoreabbrev diff Gdiff
 
-" Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 
 " Remap surround to lowercase s so it does not add an empty space
 xmap s <Plug>VSurround
@@ -81,13 +76,6 @@ nnoremap <Leader>j :m .+1<CR>==
 nnoremap <Leader>G :G<cr>
 nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
-
-" Use <c-space> to trigger completion.
-"if &filetype == "javascript" || &filetype == "python"
-""  inoremap <c-space> <C-x><C-u>
-"else
-  inoremap <silent><expr> <c-space> coc#refresh()
-"end
 
 set splitright
 function! OpenTerminal()
