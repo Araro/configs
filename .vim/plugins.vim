@@ -47,6 +47,14 @@ Plug 'scrooloose/nerdcommenter'
 " git
 Plug 'tpope/vim-fugitive'
 
+" autocomplete
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'tpope/vim-repeat'
 
 call plug#end()
