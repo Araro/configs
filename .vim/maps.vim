@@ -12,6 +12,12 @@ nmap <Leader>q :q<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>Q :q!<CR>
 
+" Search word
+nmap <C-f> :/
+
+" Turn off search word
+nnoremap <Leader>z :silent! nohls<cr>
+
 " buffer
 map <Leader>ob :Buffers<CR>
 
@@ -25,9 +31,6 @@ nnoremap <Leader>< 10<C-w><
 " Faster scrolling
 nnoremap <C-j> 10<C-e>
 nnoremap <C-k> 10<C-y>
-
-" Turn off search word
-nnoremap <Leader>z :silent! nohls<cr>
 
 " tmux navigator
 nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>

@@ -31,7 +31,7 @@ let  g:lightline = {
 		\ },
 		\ 'component_function': {
   		\ 	'gitbranch': 'fugitive#head',
-		\ 	'kitestatus': 'kite#statusline'
+		\ 	'kitestatus': 'kite#status'
 		\ },
 		\ 'colorscheme': 'wombat',
 		\ 'subseparator': {
@@ -76,6 +76,10 @@ command! -bang -nargs=? -complete=dir Files
 " snipMate
 let g:snipMate = { 'snippet_version' : 1 }
 
+" signify
+" default updatetime 4000ms is not good for async update
+set updatetime=100
+
 " COC
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -94,14 +98,14 @@ set updatetime=300
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("nvim-0.5.0") || has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+"" Always show the signcolumn, otherwise it would shift the text each time
+"" diagnostics appear/become resolved.
+"if has("nvim-0.5.0") || has("patch-8.1.1564")
+  "" Recently vim can merge signcolumn and number column into one
+  "set signcolumn=number
+"else
+  "set signcolumn=yes
+"endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
