@@ -1,2 +1,4 @@
 .vim/plugged
 .netrwhist
+*.py.swp
+*.swp
