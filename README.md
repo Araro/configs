@@ -22,6 +22,9 @@ Para instalar los plugins es necesario que ejecute dentro de los comandos de VIM
 
 `:PluginInstall` + `<Enter>` 
 
+## NEOVIM
+Es necesario crear el enlace simbolico de init.vim en la carpeta ~/.config/nvim, si ya existe no se debe crear, que apunte a ~/configs/.nvim/init.vim para que se realicen las configuraciones correspondientes de NVIM.
+
 ## Opcional
 Terminator es un emulador de terminal de Linux que proporciona varias funciones que su aplicación de terminal predeterminada no admite. Brinda la capacidad de crear múltiples terminales en una ventana y acelerar el progreso de su trabajo. Además de varias ventanas, le permite cambiar otras propiedades, como fuentes de terminal, color de fuente, color de fondo, etc.
 
