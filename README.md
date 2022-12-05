@@ -5,7 +5,10 @@
 Repositorio con archivos de configuración de Ubuntu 
 
 Clonar este repositorio en ~/{HOME} y crear enlaces simbolicos de archivos con el mismo nombre en ~/{HOME}
-
+Instrucción para crear enlaces simbolicos:
+```
+ln -s [target file] [Symbolic filename]
+```
 Dentro de los archivos de configuración .bashrc y de .zshrc se utiliza un alias de la aplicacación 'Ranger', la cual es necesario instalar con la instrucción:
 ```
 sudo apt-get install ranger
