@@ -34,3 +34,12 @@ Terminator es un emulador de terminal de Linux que proporciona varias funciones 
 Para instalar solo utilice la siguiente instrcucción en la terminal de Ubuntu:
 
 `sudo apt-get install terminator`
+
+## NODEJS
+1. Descargar el binario de nodejs de la plataforma oficial.
+2. Descomprimir el archivo
+3. Copiar las carpetas y pegarlas en la carpeta de /usr
+`sudo cp -r ./{lib,share,include,bin} /usr`
+4. Verifica la versión de node y npm
+`node --version`
+`npm --version`
