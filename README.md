@@ -32,13 +32,14 @@ Instrucción para crear enlaces simbolicos:
 ln -s [target file] [Symbolic filename]
 ```
 ```
-ln -s configs/.bashrc .bashrc
-ln -s configs/.git-prompt.sh .git-promp.sh
-ln -s configs/.nvim .nvim
-ln -s configs/.vim .vim
-ln -s configs/.vim/.vimrc .vimrc
-ln -s configs/.zshrc .zshrc
-ln -s configs/.nvim/init.vim ~/.config/nvim/init.vim 
+ln -s ~/configs/.bashrc ~/.bashrc
+ln -s ~/configs/.git-prompt.sh ~/.git-promp.sh
+ln -s ~/configs/.nvim ~/.nvim
+ln -s ~/configs/.vim ~/.vim
+ln -s ~/configs/.vim/.vimrc ~/.vimrc
+ln -s ~/configs/.zshrc ~/.zshrc
+ln -s ~/configs/.nvim/init.vim ~/.config/nvim/init.vim 
+ln -s ~/configs/uysal.zsh-theme ~/.oh-my-zsh/themes/uysal.zsh-theme 
 ```
 Dentro de los archivos de configuración .bashrc y de .zshrc se utiliza un alias de la aplicacación 'Ranger', la cual es necesario instalar con la instrucción:
 ```
