@@ -16,7 +16,7 @@ sudo apt install neovim
 ```
 sudo apt install zsh
 ```
-4.- Instalar NodeJS
+4.- Instalar NodeJS  
 5.- Instalar Ranger
 ```
 sudo apt install ranger
