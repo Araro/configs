@@ -32,5 +32,13 @@ set smartcase                   " ... unless they contain at least one capital l
 
 highlight Normal ctermbg=NONE
 syntax enable
+set t_Co=256
 
 colorscheme gruvbox
+colorscheme minimalist
+
+"" Terminal Transparency
+" hi Normal guibg=NONE ctermbg=NONE
+" hi LineNr guibg=NONE ctermbg=NONE
+" hi SignColumn guibg=NONE ctermbg=NONE
+" hi EndOfBuffer guibg=NONE ctermbg=NONE

@@ -18,6 +18,7 @@ Plug 'itchyny/lightline.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'dikiaap/minimalist'
 
 " Tree
 Plug 'scrooloose/nerdtree'
