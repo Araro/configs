@@ -10,7 +10,8 @@ export ZSH="/home/araro/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 # ZSH_THEME="robbyrussell"    # Defaul theme 
-ZSH_THEME="nanotech"
+# ZSH_THEME="nanotech"
+ZSH_THEME="uysal"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
