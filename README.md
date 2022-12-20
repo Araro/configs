@@ -4,10 +4,41 @@
 
 Repositorio con archivos de configuración de Ubuntu 
 
-Clonar este repositorio en ~/{HOME} y crear enlaces simbolicos de archivos con el mismo nombre en ~/{HOME}
+1.- Instalar Vim
+```
+sudo apt install vim
+```
+2.- Instalar NeoVim
+```
+sudo apt install neovim
+```
+3.- Instalar ZSH Shell
+```
+sudo apt install zsh
+```
+4.- Instalar NodeJS
+5.- Instalar Ranger
+```
+sudo apt install ranger
+```
+6.- Instalar Terminator (Opcional)
+```
+sudo apt install terminator
+```
+
+7.- Clonar este repositorio en ~/{HOME} y crear enlaces simbolicos de archivos con el mismo nombre en ~/{HOME}
 Instrucción para crear enlaces simbolicos:
 ```
 ln -s [target file] [Symbolic filename]
+```
+```
+ln -s configs/.bashrc .bashrc
+ln -s configs/.git-prompt.sh .git-promp.sh
+ln -s configs/.nvim .nvim
+ln -s configs/.vim .vim
+ln -s configs/.vim/.vimrc .vimrc
+ln -s configs/.zshrc .zshrc
+ln -s configs/.nvim/init.vim ~/.config/nvim/init.vim 
 ```
 Dentro de los archivos de configuración .bashrc y de .zshrc se utiliza un alias de la aplicacación 'Ranger', la cual es necesario instalar con la instrucción:
 ```
@@ -36,7 +67,7 @@ Para instalar solo utilice la siguiente instrcucción en la terminal de Ubuntu:
 `sudo apt-get install terminator`
 
 ## NODEJS
-1. Descargar el binario de nodejs de la plataforma oficial.
+1. Descargar el binario de nodejs de la plataforma oficial. (https://nodejs.org/en/download/)
 2. Descomprimir el archivo
 3. Copiar las carpetas y pegarlas en la carpeta de /usr
 `sudo cp -r ./{lib,share,include,bin} /usr`
