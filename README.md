@@ -17,7 +17,7 @@ sudo apt install neovim
 sudo apt install zsh
 ```
 4.- Instalar NodeJS  
-5.- Instalar Ranger
+5.- Dentro de los archivos de configuración .bashrc y de .zshrc se utiliza un alias de la aplicacación 'Ranger', la cual es necesario instalar con la instrucción:
 ```
 sudo apt install ranger
 ```
@@ -40,10 +40,6 @@ ln -s ~/configs/.vim/.vimrc ~/.vimrc
 ln -s ~/configs/.zshrc ~/.zshrc
 ln -s ~/configs/.nvim/init.vim ~/.config/nvim/init.vim 
 ln -s ~/configs/uysal.zsh-theme ~/.oh-my-zsh/themes/uysal.zsh-theme 
-```
-Dentro de los archivos de configuración .bashrc y de .zshrc se utiliza un alias de la aplicacación 'Ranger', la cual es necesario instalar con la instrucción:
-```
-sudo apt-get install ranger
 ```
 ## ZSH Shell
 El prompt 'zsh' se configura con https://github.com/ohmyzsh/ohmyzsh 
