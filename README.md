@@ -21,12 +21,20 @@ sudo apt install zsh
 ```
 sudo apt install ranger
 ```
-6.- Instalar Terminator (Opcional)
+6.- Instalar fzf para poder utilizar el plugin correspondiente
+```
+sudo apt install fxf
+```
+7.- Instalar bat para habilitar el resaltado del código y documentos
+```
+sudo apt install bat
+```
+8.- Instalar Terminator (Opcional)
 ```
 sudo apt install terminator
 ```
 
-7.- Clonar este repositorio en ~/{HOME} y crear enlaces simbolicos de archivos con el mismo nombre en ~/{HOME}
+9.- Clonar este repositorio en ~/{HOME} y crear enlaces simbolicos de archivos con el mismo nombre en ~/{HOME}
 Instrucción para crear enlaces simbolicos:
 ```
 ln -s [target file] [Symbolic filename]
