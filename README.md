@@ -17,13 +17,7 @@ sudo apt install neovim
 sudo apt install zsh
 ```
 4.- Instalar NodeJS  
-  4.1. Descargar el binario de nodejs de la plataforma oficial. (https://nodejs.org/en/download/)
-  4.2. Descomprimir el archivo
-  4.3. Copiar las carpetas y pegarlas en la carpeta de /usr
-      `sudo cp -r ./{lib,share,include,bin} /usr`
-  4.4. Verifica la versión de node y npm
-      `node --version`
-      `npm --version`
+
 5.- Dentro de los archivos de configuración .bashrc y de .zshrc se utiliza un alias de la aplicacación 'Ranger', la cual es necesario instalar con la instrucción:
 ```
 sudo apt install ranger
@@ -83,4 +77,11 @@ Para instalar solo utilice la siguiente instrcucción en la terminal de Ubuntu:
 `sudo apt-get install terminator`
 
 ## NODEJS
-NodeJS se utiliza para la herramienta de autocompletado COC
+NodeJS se utiliza para la herramienta de autocompletado COC.vim
+1. Descargar el binario de nodejs de la plataforma oficial. (https://nodejs.org/en/download/)
+2. Descomprimir el archivo
+3. Copiar las carpetas y pegarlas en la carpeta de /usr
+  `sudo cp -r ./{lib,share,include,bin} /usr`
+4. Verifica la versión de node y npm
+  `node --version`
+  `npm --version`
