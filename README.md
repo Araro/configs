@@ -34,12 +34,16 @@ sudo apt install bat
 ```
 sudo  apt-get install silversearcher-ag
 ```
-9.- Instalar Terminator (Opcional)
+9.- Instalar tmux para utilizar el plugin de Vim Tmux Navigator
+```
+sudo  apt-get install tmux
+```
+10.- Instalar Terminator (Opcional)
 ```
 sudo apt install terminator
 ```
 
-10.- Clonar este repositorio en ~/{HOME} y crear enlaces simbolicos de archivos con el mismo nombre en ~/{HOME}
+11.- Clonar este repositorio en ~/{HOME} y crear enlaces simbolicos de archivos con el mismo nombre en ~/{HOME}
 Instrucción para crear enlaces simbolicos:
 ```
 ln -s [target file] [Symbolic filename]
