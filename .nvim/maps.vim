@@ -1,10 +1,12 @@
-let mapleader=' '
+let mapleader=' ' 
 
 " To open Plugins
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
 nmap <Leader>p :Files<CR>
 nmap <Leader>ag :Ag<CR>
+nmap <Leader>m :Maps<CR>
+nmap <Leader>d :Commands<CR>
 
 " To save and quit file
 nmap <Leader>w :w<CR>
@@ -13,7 +15,7 @@ nmap <Leader>x :x<CR>
 nmap <Leader>Q :q!<CR>
 
 " Search word
-nmap <C-f> :/
+nmap <C-f> /
 
 " Turn off search word
 nnoremap <Leader>z :silent! nohls<cr>
@@ -37,7 +39,7 @@ nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
-" nnoremap <silent> <Leader><C-g> :TmuxNavigatePrevious<cr>
+nnoremap <silent> <Leader><C-g> :TmuxNavigatePrevious<cr>
 
 " testing
 nnoremap <Leader>t :TestNearest<CR>
@@ -49,16 +51,11 @@ nnoremap <Leader>; $a;<Esc>
 
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
-cnoreabbrev blame Gblame
 cnoreabbrev find NERDTreeFind
 cnoreabbrev diff Gdiff
 
-
 " Remap surround to lowercase s so it does not add an empty space
 xmap s <Plug>VSurround
-
-" diagnostics
-nnoremap <leader>P :let @*=expand("%")<CR>
 
 " tabs navigation
 map <Leader>h :tabprevious<cr>
@@ -74,12 +71,7 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 nnoremap <Leader>k :m .-2<CR>==
 nnoremap <Leader>j :m .+1<CR>==
-
-" git
-nnoremap <Leader>G :G<cr>
-nnoremap <Leader>gp :Gpush<cr>
-nnoremap <Leader>gl :Gpull<cr>
-
+                
 set splitright
 function! OpenTerminal()
 	" Move to right most buffer
@@ -96,7 +88,8 @@ function! OpenTerminal()
 		execute "q!"
 	else
 		" Open terminal
-		execute "vert term"
+		execute "vsplit"
+        execute "terminal"
 
 		" Turn off numbers
 		execute "set nonu"
