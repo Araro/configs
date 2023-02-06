@@ -17,16 +17,33 @@ sudo apt install neovim
 sudo apt install zsh
 ```
 4.- Instalar NodeJS  
+
 5.- Dentro de los archivos de configuración .bashrc y de .zshrc se utiliza un alias de la aplicacación 'Ranger', la cual es necesario instalar con la instrucción:
 ```
 sudo apt install ranger
 ```
-6.- Instalar Terminator (Opcional)
+6.- Instalar fzf para poder utilizar el plugin correspondiente
+```
+sudo apt install fxf
+```
+7.- Instalar bat para habilitar el resaltado del código y documentos dentro de fzf
+```
+sudo apt install bat
+```
+8.- Instalar Ag para habilitar la busqueda de archivos dentro de fzf
+```
+sudo  apt-get install silversearcher-ag
+```
+9.- Instalar tmux para utilizar el plugin de Vim Tmux Navigator
+```
+sudo  apt-get install tmux
+```
+10.- Instalar Terminator (Opcional)
 ```
 sudo apt install terminator
 ```
 
-7.- Clonar este repositorio en ~/{HOME} y crear enlaces simbolicos de archivos con el mismo nombre en ~/{HOME}
+11.- Clonar este repositorio en ~/{HOME} y crear enlaces simbolicos de archivos con el mismo nombre en ~/{HOME}
 Instrucción para crear enlaces simbolicos:
 ```
 ln -s [target file] [Symbolic filename]
@@ -64,10 +81,11 @@ Para instalar solo utilice la siguiente instrcucción en la terminal de Ubuntu:
 `sudo apt-get install terminator`
 
 ## NODEJS
+NodeJS se utiliza para la herramienta de autocompletado COC.vim
 1. Descargar el binario de nodejs de la plataforma oficial. (https://nodejs.org/en/download/)
 2. Descomprimir el archivo
 3. Copiar las carpetas y pegarlas en la carpeta de /usr
-`sudo cp -r ./{lib,share,include,bin} /usr`
+  `sudo cp -r ./{lib,share,include,bin} /usr`
 4. Verifica la versión de node y npm
-`node --version`
-`npm --version`
+  `node --version`
+  `npm --version`
