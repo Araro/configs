@@ -24,7 +24,7 @@ sudo apt install ranger
 ```
 6.- Instalar fzf para poder utilizar el plugin correspondiente
 ```
-sudo apt install fxf
+sudo apt install fzf
 ```
 7.- Instalar bat para habilitar el resaltado del código y documentos dentro de fzf
 ```
